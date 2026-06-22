@@ -1,0 +1,42 @@
+# 🔐 Crack the Hash – Write-up
+
+---
+
+## ⚠️ Spoiler Alert
+
+This write-up contains walkthrough details, methodologies, commands, and solutions that may reveal answers to the associated TryHackMe challenge. If you intend to complete the room independently, please stop reading here and return after finishing the exercise.
+
+---
+
+# 🧩 Level 1 – Hash Fundamentals
+
+**Wordlist Used:** rockyou.txt  
+**Tools Used:** Hashcat, John the Ripper  
+
+---
+
+## 🧪 Task 1 – MD5 Hash
+
+**Hash:**
+48bb6e862e54f2a795ffc4e541caed4d
+
+### 🔍 Step 1: Identify Hash Type
+Used online hash identifier:  
+https://hashes.com/en/tools/hash_identifier  
+
+**Detected Type:** MD5  
+
+---
+
+### ⚙️ Step 2: Crack Using Hashcat
+
+```bash
+hashcat -m 0 -a 0 Crack_This rockyou.txt
+hashcat -m 0 Crack_This --show
+🔓 Plaintext: easy
+
+⚙️ Step 3: Crack Using John the Ripper
+john --format=raw-md5 --wordlist=rockyou.txt Crack_This
+john --format=raw-md5 Crack_This --show
+
+🔓 Plaintext: easy
