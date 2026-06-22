@@ -107,7 +107,7 @@ john --format=raw-sha256 Crack_This --show
 
 ---
 
-### Task 3 :  $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
+### Task 4 :  $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
 
 Hash Type : bcrypt aka Blowfish 
 
@@ -134,7 +134,7 @@ john --format=bcrypt --mask=?l?l?l?l Crack_This
 
 ---
 
-### Task 4 :  279412f945939ba78ce0758d3fd83daa
+### Task 5 :  279412f945939ba78ce0758d3fd83daa
 
 Hash Type : MD4
 
