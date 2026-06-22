@@ -4,7 +4,7 @@ Hands-on cybersecurity lab repository focused on password security, hash analysi
 
 ---
 
-## 📌 About This Lab
+##  About This Lab
 
 **Crack the Hash** is a hands-on **password auditing and cryptanalysis lab** from TryHackMe focused on identifying and recovering plaintext passwords from various hash formats.
 
@@ -12,7 +12,7 @@ It builds foundational understanding of **how passwords are stored, protected, a
 
 ---
 
-## 🧠 Core Skills Covered
+##  Core Skills Covered
 
 This lab focuses on practical skills used in real-world cybersecurity roles such as **SOC Analyst, Pentester, and Security Engineer**:
 
@@ -37,7 +37,7 @@ This lab focuses on practical skills used in real-world cybersecurity roles such
 
 ---
 
-## 🏢 Professional Relevance
+##  Professional Relevance
 
 Password auditing is a core activity in:
 
@@ -55,7 +55,7 @@ Security professionals frequently encounter password hashes during:
 
 ---
 
-## 🎯 Key Takeaway
+##  Key Takeaway
 
 This lab demonstrates a strong understanding of:
 
