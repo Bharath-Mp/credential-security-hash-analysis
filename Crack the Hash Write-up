@@ -231,7 +231,7 @@ Input hash file format :
 
 e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme ( pass:salt Format )
 
-!image.png
+![Level2_Task4 Output](Screenshots/L2_Task4-Hashcat.png.png)
 
 ```purescript
 hashcat -m 160 -a 0 Crack_This /usr/share/wordlists/rockyou.txt
