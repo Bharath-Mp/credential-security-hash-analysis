@@ -13,7 +13,7 @@ Tools Used : Hashcat & John the Ripper
 
 **Step 1** - Find the hash type on https://hashes.com/en/tools/hash_identifier
 
-!image.png
+![Task1_HashType](Screenshots/Task1-HashType.png.png)
 
 Hash Type : MD5
 
@@ -23,7 +23,7 @@ Step 3 - Use Hashcat to crack the hash, alternatively you can use John the Rippe
 
 - Hash Cat
 
-!image.png
+![Task1_Hashcat Output](Screenshots/Task1-Hashcat.png.png)
 
 ```purescript
 hashcat -m 0 -a 3 Crack_This /usr/share/wordlists/rockyou.txt
@@ -39,7 +39,7 @@ hashcat -m 0 -a 3 Crack_This --show
 john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt Crack_This
 ```
 
-!image.png
+![Task1_John Output](Screenshots/Task1-John.png.png)
 
 ***Plain Text : easy***
 
@@ -51,7 +51,7 @@ Hash Type : SHA1
 
 - Hash Cat
 
-!image.png
+![Task2_Hashcat Output](Screenshots/Task2-Hashcat.png.png)
 
 ```purescript
 hashcat -m 100 -a 3 Crack_This /usr/share/wordlists/rockyou.txt
@@ -63,9 +63,8 @@ hashcat -m 100 -a 3 Crack_This --show
 
 - John the Ripper
 
-!image.png
-
-!image.png
+![Task2_John Output](Screenshots/Task2-aJohn.png.png)
+![Task2_John Output](Screenshots/Task2-bJohn.png.png)
 
 ```purescript
 john --format=raw-sha1 --wordlist=/usr/share/wordlists/rockyou.txt Crack_This
@@ -83,7 +82,7 @@ Hash Type :  SHA256
 
 - Hash Cat
 
-!image.png
+![Task4_Hashcat Output](Screenshots/Task3-Hashcat.png.png)
 
 ```purescript
  hashcat -m 1470 -a 3 Crack_This /usr/share/wordlists/rockyou.txt
@@ -95,7 +94,7 @@ Hash Type :  SHA256
 
 - John the Ripper
 
-!image.png
+![Task3_John Output](Screenshots/Task3-John.png.png)
 
 ```purescript
 john --format=raw-sha256 --wordlist=/usr/share/wordlists/rockyou.txt Crack_This
@@ -117,7 +116,7 @@ Also Hint suggest all 4 characters are lower case alphabets
 
 - Hash Cat
 
-!image.png
+![Task4_Hashcat Output](Screenshots/Task4-hashcat.png.png)
 
 ```purescript
 hashcat -m 3200 -a 3 Crack_This -i --increment-min=4 --increment-max=4 ?l?l?l?l
@@ -154,7 +153,7 @@ john --format=raw-md4 --wordlist=rockyou.txt hash.txt
 
 Since the previous tasks focused extensively on offline password-cracking tools, this exercise was intended to showcase a different methodology that may be leveraged during an assessment. In real-world scenarios, practitioners often utilize both offline and online resources in parallel to improve efficiency and maximize the chances of successful hash recovery.
 
-!image.png
+![Task5_Output](Screenshots/Task5.png.png)
 
 ***Plain Text : Eternity22***
 
@@ -175,7 +174,7 @@ Hash Type : SHA256
 
 - Hash Cat
 
-![Hashcat Output](Screenshots/L2_Task1-Hashcat.png.png)
+![Level2_Task1 Output](Screenshots/L2_Task1-Hashcat.png.png)
 
 ```purescript
 hashcat -m 1400  -a 0 Crack_This /usr/share/wordlists/rockyou.txt
@@ -191,7 +190,7 @@ Hash Type : NTLM
 
 - Hash Cat
 
-!image.png
+![Level2_Task2 Output](Screenshots/L2_Task2-Hashcat.png.png)
 
 ```purescript
 hashcat -m 1000  -a 0 Crack_This /usr/share/wordlists/rockyou.txt
@@ -209,7 +208,7 @@ Salt :   aReallyHardSalt
 
 - Hash Cat
 
-!image.png
+![Level2_Task3 Output](Screenshots/L2_Task3-Hashcat.png.png)
 
 ```purescript
 hashcat -m 1800 -a 0 Crack_This /usr/share/wordlists/rockyou.txt
