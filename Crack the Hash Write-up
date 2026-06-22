@@ -175,7 +175,7 @@ Hash Type : SHA256
 
 - Hash Cat
 
-![Hashcat Output](Screenshots/L2_Task 1-Hashcat.png.png)
+![Hashcat Output](Screenshots/L2_Task1-Hashcat.png.png)
 
 ```purescript
 hashcat -m 1400  -a 0 Crack_This /usr/share/wordlists/rockyou.txt
